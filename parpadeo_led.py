@@ -3,7 +3,7 @@ import time
 
 PIN = 4 
 
-def setup()
+def setup():
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
     GPIO.setup(PIN, GPIO.OUT)
@@ -14,7 +14,7 @@ def set_high():
 def set_low():
     GPIO.output(PIN, GPIO.LOW)
 
-def loop()
+def loop():
 
     set_high()       
     time.sleep(0.5) 
